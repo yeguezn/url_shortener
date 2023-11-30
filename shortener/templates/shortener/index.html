@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>URL shortener</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="container bg-blue large-size">
+                
+                <div class="h1-container">
+                    <h1>URL SHORTENER</h1>
+                </div>
+
+                <form method="post" id="form">
+                    {% csrf_token %}
+                    <div class="container">
+                        <label for="fullURLInput">Paste your long url here:</label>
+                        <input type="text" name="full_url" id="fullUrlInput" class="fullUrlInput input">
+                        <div class="container__buttons">
+                            <input type="submit" value="short" id="shortUrlBtn" class="shortUrlBtn button">
+                            <input type="button" value="clear" id="clearBtn" class="clearBtn button">
+                        </div>
+                    </div>
+                </form>
+
+                <div id="output-container" class="container output-container">
+                    <label for="shortenedUrl">Here's your shortened url:</label>
+                    <input id="shortenedUrl" class="shortenedUrl input" readonly="">
+                    <div class="container__buttons">
+                        <button id="copyBtn" class="button">Copy</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="{% static 'js/get_csrftoken.js' %}"></script>
+        <script src="{% static 'js/dom_printer.js' %}"></script>
+        <script src="{% static 'js/send_form.js' %}"></script>
+        <script src="{% static 'js/clear_dom.js' %}"></script>
+        <script src="{% static 'js/copy_to_clipboard.js' %}"></script>
+    </body>
+
+</html>

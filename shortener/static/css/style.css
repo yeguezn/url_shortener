@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullUrl-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container__buttons{
+    margin-top: 10px;
+}
+
+.shortUrlBtn{
+    margin-right: 10px;
+}
+
+.clearBtn{
+    margin-left: 10px;
+}
+
+.fullUrlInput, .shortenedUrl{
+    height: 25px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.fullUrlInput{
+    width:800px;
+}
+
+.shortenedUrl{
+    width:400px;
+    text-align: center;
+}
+
+.bg-blue{
+    background-color: #8030d4;
+}
+
+.large-size{
+    width: 1000px;
+    height: 350px;
+    border-radius: 20px;
+    padding-top: 100px;
+}
+
+.output-container{
+    margin-top: 40px;
+}
+
+.h1-container{
+    padding-bottom: 30px;
+}
+
+.button{
+    background-color: #7955f3;
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: transform .40s;
+}
+
+.input{
+    border:none;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #7955f3;
+    transform: scale(0.95);
+}
