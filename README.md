@@ -25,9 +25,21 @@ cd ..
 ```bash script
 pip install -r requirements.txt
 ```
-5. Run the application
+5. Create a database named shortener in PostgreSQL
+~~~~sql
+CREATE DATABASE shortener;
+~~~~
+6. Run makemigrations command
+```bash script
+python manage.py makemigrations
+```
+7. Run migrate command
+```bash script
+python manage.py migrate shortener
+```
+8. Run the application
 ```bash script
 python manage.py runserver
 ```
-6. Do click in the next link
+9. Do click in the next link
 [http://localhost:8000](http://localhost:8000)
