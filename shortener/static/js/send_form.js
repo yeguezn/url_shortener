@@ -20,7 +20,13 @@ async function getShortenedURL(full_url){
 
 form.addEventListener("submit", async (e)=>{
     e.preventDefault();
-    fullUrlInput.style.border = "none";
+
+    if (fullUrlInput.style.border === "2px solid red") {
+
+        fullUrlInput.style.border = "none";
+        
+    }
+    
     data = await getShortenedURL(fullUrlInput.value);
     domPrinter(data);
 });
