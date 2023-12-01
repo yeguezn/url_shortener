@@ -11,6 +11,14 @@
 git clone https://github.com/yeguezn/url_shortener your-folder-name
 ```
 2. Create a virtual environment
+Windows
+```bash script
+cd venv/scripts
+activate
+cd..
+cd.. 
+```
+Linux
 ```bash script
 python3 -m venv .venv
 ```
@@ -25,6 +33,7 @@ cd ..
 ```bash script
 pip install -r requirements.txt
 ```
+
 5. Create a database named shortener in PostgreSQL
 ~~~~sql
 CREATE DATABASE shortener;
