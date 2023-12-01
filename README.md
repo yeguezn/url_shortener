@@ -1,5 +1,10 @@
 # URL shortener
 
+## Main development tools
+1. Python (3.10.12)
+2. Django framework (4.2.7)
+3. PostgreSQL (14.9)
+
 ## Installation
 1. Clone this repository
 ```bash script
