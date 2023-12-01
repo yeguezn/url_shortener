@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invalid URL code</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="bg-color container md-size">
+                <h1 class="h1-center">There are not any url related to that code in the Database</h1>
+                <button class="home-button"><a href="{% url 'index' %}">home</a></button>
+            </div>
+        </div>
+    
+    </body>
+
+</html>

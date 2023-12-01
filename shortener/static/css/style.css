@@ -58,11 +58,11 @@
     text-align: center;
 }
 
-.bg-blue{
+.bg-color{
     background-color: #8030d4;
 }
 
-.large-size{
+.large-size, .md-size{
     width: 1000px;
     height: 350px;
     border-radius: 20px;
@@ -77,7 +77,7 @@
     padding-bottom: 30px;
 }
 
-.button{
+.button, .home-button{
     background-color: #7955f3;
     border: none;
     width: 100px;
@@ -95,4 +95,20 @@
     background-color: #fff;
     color: #7955f3;
     transform: scale(0.95);
+}
+
+.h1-center{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home-button:hover{
+    transform: scale(0.95);
+}
+
+.md-size{
+    height: 205px;
 }

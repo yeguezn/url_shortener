@@ -50,7 +50,7 @@ def redirect_url(request, url_code):
     url_object = Url.objects.filter(url_code=url_code).values()
 
     if not url_object:
-        return HttpResponse("There are not any url with that url code")
+        return render(request, "shortener/invalid_url_code.html")
 
     full_url = url_object[0]["url"]
 
