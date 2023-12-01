@@ -2,7 +2,7 @@ let shortenedUrl = document.getElementById("shortenedUrl");
 
 function domPrinter(output) {
 
-    if ("message" in output) {
+    if ("error_message" in output) {
         fullUrlInput.style.border = "2px solid red";
         fullUrlInput.value = output["message"];
     }

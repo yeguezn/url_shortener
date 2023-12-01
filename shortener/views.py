@@ -32,7 +32,7 @@ def generate_short_URL(request):
     url_object = Url.objects.filter(url=full_url).values()
 
     if not re.search(URL_REGEX, full_url):
-        response = {"message":"Please, enter a valid url"}
+        response = {"error_message":"Please, enter a valid url"}
         return JsonResponse(response)
 
     if not url_object: 
