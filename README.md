@@ -11,6 +11,11 @@
 git clone https://github.com/yeguezn/url_shortener your-folder-name
 ```
 2. Create a virtual environment
+```bash script
+python3 -m venv .venv
+```
+3. Activate virtual environment
+
 Windows
 ```bash script
 cd venv/scripts
@@ -18,11 +23,8 @@ activate
 cd..
 cd.. 
 ```
+
 Linux
-```bash script
-python3 -m venv .venv
-```
-3. Activate virtual environment
 ```bash script
 cd ./.venv/bin
 source activate
